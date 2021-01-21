@@ -1,0 +1,26 @@
+.index-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 9999;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-wrapper {
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  width: 95%;
+  padding: 10px 0px;
+  border-bottom: 2px white solid;
+  margin: 0px auto 15px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-wrapper {
+    padding: 15px 10px;
+    border: none;
+    margin: none;
+  }
+}

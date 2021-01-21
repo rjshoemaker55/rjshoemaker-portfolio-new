@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Yusei Magic';
+}
+
+@font-face {
+  font-family: 'Yusei Magic';
+  src: url('/fonts/YuseiMagic/YuseiMagic-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+#tsparticles {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  background: transparent;
+}
