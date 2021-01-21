@@ -65,6 +65,10 @@ const TechHeader = styled.div`
 const ProjectTechItem = styled.div`
   color: rgb(${colors.red});
   display: inline-block;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
 `
 
 const ProjectDisplayTitle = styled.div`
