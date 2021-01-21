@@ -59,7 +59,7 @@ const Index = () => {
           </HeaderLinkWrapper>
         </div>
         <ProjectsSection />
-        <BioSection />
+        {/* <BioSection /> */}
       </div>
     </>
   )
