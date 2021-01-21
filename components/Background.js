@@ -7,7 +7,7 @@ const Background = (props) => {
       options={{
         background: {
           color: {
-            value: '#000000'
+            value: 'rgb(20, 20, 20)'
           }
         },
         fpsLimit: 60,

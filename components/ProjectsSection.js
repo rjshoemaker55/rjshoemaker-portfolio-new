@@ -136,71 +136,74 @@ const ProjectsSection = () => {
     window.addEventListener('resize', setWindowWidth(window.innerWidth))
   })
   return (
-    <div className='projects-section-wrapper'>
-      <div className='project-list'>
-        {projects.map((project) => (
-          <ProjectListItem
-            key={project.id}
-            currentProject={currentProject}
-            onClick={() => setCurrentProject(project)}
-          >
-            {project.name}
-          </ProjectListItem>
-        ))}
+    <>
+      <div className='projects-section-title'>projects</div>
+      <div className='projects-section-wrapper'>
+        <div className='project-list'>
+          {projects.map((project) => (
+            <ProjectListItem
+              key={project.id}
+              currentProject={currentProject}
+              onClick={() => setCurrentProject(project)}
+            >
+              {project.name}
+            </ProjectListItem>
+          ))}
+        </div>
+        <div className='project-display'>
+          <LazyImage src={currentProject.gif} />
+          {/* <ProjectDisplayGif src={currentProject.gif} /> */}
+          <ProjectDisplayFooter>
+            <div className='project-display-info'>
+              <ProjectDisplayTitle>{currentProject.name}</ProjectDisplayTitle>
+              <ProjectDisplayDesc>
+                {currentProject.description}
+              </ProjectDisplayDesc>
+              {/* eslint multiline-ternary: ["error", "never"] */}
+              {windowWidth > 768 ? (
+                <>
+                  <ProjectDisplayRepo>
+                    Visit Repo:{' '}
+                    <a
+                      href={currentProject.repo}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      {currentProject.deployed}
+                    </a>
+                  </ProjectDisplayRepo>
+                  <ProjectDisplayDeployed>
+                    Visit Deployed:{' '}
+                    <a
+                      href={currentProject.deployed}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      {currentProject.deployed}
+                    </a>
+                  </ProjectDisplayDeployed>
+                </>
+              ) : (
+                <>
+                  <ProjectDisplayRepo>
+                    Visit Repo <a href={currentProject.repo}>Here</a>
+                  </ProjectDisplayRepo>
+                  <ProjectDisplayDeployed>
+                    Visit Deployed <a href={currentProject.deployed}>Here</a>
+                  </ProjectDisplayDeployed>
+                </>
+              )}
+            </div>
+            <div className='project-display-tech'>
+              <TechHeader>Technologies used:</TechHeader>
+              {currentProject.tech.map((tech) => (
+                <ProjectTechItem key={tech}>{tech}</ProjectTechItem>
+              ))}
+            </div>
+          </ProjectDisplayFooter>
+        </div>
       </div>
-      <div className='project-display'>
-        <LazyImage src={currentProject.gif} />
-        {/* <ProjectDisplayGif src={currentProject.gif} /> */}
-        <ProjectDisplayFooter>
-          <div className='project-display-info'>
-            <ProjectDisplayTitle>{currentProject.name}</ProjectDisplayTitle>
-            <ProjectDisplayDesc>
-              {currentProject.description}
-            </ProjectDisplayDesc>
-            {/* eslint multiline-ternary: ["error", "never"] */}
-            {windowWidth > 768 ? (
-              <>
-                <ProjectDisplayRepo>
-                  Visit Repo:{' '}
-                  <a
-                    href={currentProject.repo}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    {currentProject.deployed}
-                  </a>
-                </ProjectDisplayRepo>
-                <ProjectDisplayDeployed>
-                  Visit Deployed:{' '}
-                  <a
-                    href={currentProject.deployed}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    {currentProject.deployed}
-                  </a>
-                </ProjectDisplayDeployed>
-              </>
-            ) : (
-              <>
-                <ProjectDisplayRepo>
-                  Visit Repo <a href={currentProject.repo}>Here</a>
-                </ProjectDisplayRepo>
-                <ProjectDisplayDeployed>
-                  Visit Deployed <a href={currentProject.deployed}>Here</a>
-                </ProjectDisplayDeployed>
-              </>
-            )}
-          </div>
-          <div className='project-display-tech'>
-            <TechHeader>Technologies used:</TechHeader>
-            {currentProject.tech.map((tech) => (
-              <ProjectTechItem key={tech}>{tech}</ProjectTechItem>
-            ))}
-          </div>
-        </ProjectDisplayFooter>
-      </div>
-    </div>
+    </>
   )
 }
 

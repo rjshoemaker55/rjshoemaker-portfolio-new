@@ -6,6 +6,16 @@
   flex-direction: column;
 }
 
+.projects-section-title {
+  margin-right: 10%;
+  font-size: 70px;
+  color: rgb(185, 249, 248);
+  text-align: right;
+  margin-top: -25px;
+  line-height: 0.8;
+  z-index: 10000;
+}
+
 .project-list {
   display: flex;
   flex-direction: row;

@@ -1,3 +1,11 @@
+:root {
+  --red: rgb(255, 179, 175);
+  --yellow: rgb(255, 242, 133);
+  --green: rgb(170, 247, 125);
+  --blue: rgb(185, 249, 248);
+  --purple: rgb(221, 170, 255);
+}
+
 html,
 body {
   padding: 0;
@@ -33,4 +41,12 @@ a {
 
 img {
   background: transparent;
+}
+
+:root {
+  --reddi: rgb('255, 179, 173');
+  --yellow: rgb('255, 242, 133');
+  --green: rgb('170, 247, 125');
+  --blue: rgb('185, 249, 248');
+  --purple: rgb('221, 170, 255');
 }
