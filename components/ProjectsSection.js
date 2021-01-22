@@ -42,96 +42,6 @@ const ProjectListItem = styled.div`
   }
 `
 
-const ProjectDisplayFooter = styled.div`
-  border: 2px solid rgb(${colors.yellow});
-  border-radius: 5px;
-  margin-top: 8px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-
-  @media only screen and (min-width: 768px) {
-    flex-direction: row;
-  }
-`
-
-const TechHeader = styled.div`
-  display: block;
-  color: rgb(${colors.yellow});
-  font-weight: bold;
-  font-size: 18px;
-`
-
-const ProjectTechItem = styled.div`
-  color: rgb(${colors.red});
-  display: inline-block;
-
-  @media only screen and (min-width: 768px) {
-    display: block;
-  }
-`
-
-const ProjectDisplayTitle = styled.div`
-  font-weight: bold;
-  color: rgb(${colors.yellow});
-  font-size: 25px;
-`
-
-const ProjectDisplayDesc = styled.div`
-  color: rgb(${colors.purple});
-`
-
-const ProjectDisplayRepo = styled.div`
-  color: rgb(${colors.red});
-  margin-top: 7px;
-
-  > a {
-    text-decoration: underline;
-    transition-duration: 0.3s;
-    background-color: rgb(${colors.red});
-    color: black;
-    padding: 0px 10px;
-
-    &:hover {
-      background-color: rgb(${colors.red});
-      color: black;
-    }
-
-    @media only screen and (min-width: 768px) {
-      background-color: transparent;
-      color: rgb(${colors.red});
-      padding: 0;
-      margin-top: 0;
-      line-height: auto;
-    }
-  }
-`
-
-const ProjectDisplayDeployed = styled.div`
-  color: rgb(${colors.green});
-  margin-top: 7px;
-
-  > a {
-    text-decoration: underline;
-    transition-duration: 0.3s;
-    background-color: rgb(${colors.green});
-    color: black;
-    padding: 0px 10px;
-
-    &:hover {
-      background-color: rgb(${colors.green});
-      color: black;
-    }
-
-    @media only screen and (min-width: 768px) {
-      background-color: transparent;
-      color: rgb(${colors.green});
-      padding: 0;
-      margin-top: 0;
-    }
-  }
-`
-
 const ProjectsSection = () => {
   const [currentProject, setCurrentProject] = useState(projects[0])
   const [windowWidth, setWindowWidth] = useState(0)
@@ -157,16 +67,16 @@ const ProjectsSection = () => {
         <div className='project-display'>
           <LazyImage src={currentProject.gif} />
           {/* <ProjectDisplayGif src={currentProject.gif} /> */}
-          <ProjectDisplayFooter>
-            <div className='project-display-info'>
-              <ProjectDisplayTitle>{currentProject.name}</ProjectDisplayTitle>
-              <ProjectDisplayDesc>
+          <div className='project-footer-wrapper'>
+            <div className='project-footer-info'>
+              <div className='project-display-title'>{currentProject.name}</div>
+              <div className='project-display-description'>
                 {currentProject.description}
-              </ProjectDisplayDesc>
+              </div>
               {/* eslint multiline-ternary: ["error", "never"] */}
               {windowWidth > 768 ? (
                 <>
-                  <ProjectDisplayRepo>
+                  <div className='project-display-link project-repo-link'>
                     Visit Repo:{' '}
                     <a
                       href={currentProject.repo}
@@ -175,8 +85,8 @@ const ProjectsSection = () => {
                     >
                       {currentProject.deployed}
                     </a>
-                  </ProjectDisplayRepo>
-                  <ProjectDisplayDeployed>
+                  </div>
+                  <div className='project-display-link project-deployed-link'>
                     Visit Deployed:{' '}
                     <a
                       href={currentProject.deployed}
@@ -185,26 +95,28 @@ const ProjectsSection = () => {
                     >
                       {currentProject.deployed}
                     </a>
-                  </ProjectDisplayDeployed>
+                  </div>
                 </>
               ) : (
                 <>
-                  <ProjectDisplayRepo>
+                  <div className='project-display-link project-repo-link'>
                     Visit Repo <a href={currentProject.repo}>Here</a>
-                  </ProjectDisplayRepo>
-                  <ProjectDisplayDeployed>
+                  </div>
+                  <div className='project-display-link project-deployed-link'>
                     Visit Deployed <a href={currentProject.deployed}>Here</a>
-                  </ProjectDisplayDeployed>
+                  </div>
                 </>
               )}
             </div>
-            <div className='project-display-tech'>
-              <TechHeader>Technologies used:</TechHeader>
+            <div className='project-tech-wrapper'>
+              <div className='project-tech-header'>Technologies used:</div>
               {currentProject.tech.map((tech) => (
-                <ProjectTechItem key={tech}>{tech}</ProjectTechItem>
+                <div className='project-tech-item' key={tech}>
+                  {tech}
+                </div>
               ))}
             </div>
-          </ProjectDisplayFooter>
+          </div>
         </div>
       </div>
     </>

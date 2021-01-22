@@ -1,0 +1,170 @@
+.projects-section-wrapper {
+  height: 600px;
+  margin: auto;
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+}
+
+.projects-section-title {
+  margin-right: 10%;
+  font-size: 70px;
+  color: rgb(185, 249, 248);
+  text-align: right;
+  margin-top: -45px;
+  line-height: 0.8;
+  z-index: 10000;
+  border-radius: 5px 5px 0 0;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-display-title {
+  font-weight: bold;
+  color: rgb(var(--pastelyellow));
+  font-size: 25px;
+}
+
+.project-display-description {
+  color: rgb(var(--pastelpurple));
+}
+
+.project-display {
+  order: 2;
+  flex: 3;
+}
+
+.project-footer-wrapper {
+  border: 2px solid rgb(var(--pastelyellow));
+  border-radius: 5px;
+  margin-top: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-footer-info {
+  flex: 3;
+}
+
+.project-display-link {
+  margin-top: 7px;
+
+  > a {
+    text-decoration: underline;
+    transition-duration: 0.3s;
+    color: black;
+    padding: 0px 10px;
+  }
+}
+
+.project-repo-link {
+  > a {
+    background-color: rgb(var(--pastelred));
+  }
+}
+
+.project-deployed-link {
+  > a {
+    background-color: rgb(var(--patelgreen));
+  }
+}
+
+.project-tech-wrapper {
+  flex: 1;
+  justify-content: flex-end;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.project-tech-header {
+  display: block;
+  color: rgb(var(--pastelyellow));
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.project-tech-item {
+  color: rgb(var(--pastelred));
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-display-tech {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .project-list {
+    flex: 1;
+  }
+
+  .project-footer-wrapper {
+    flex-direction: row;
+  }
+
+  .project-display-link {
+    padding: 0;
+    margin-top: 0;
+    line-height: auto;
+
+    > a {
+      background-color: transparent;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  .project-repo-link {
+    color: rgb(var(--pastelred));
+
+    > a {
+      color: rgb(var(--pastelred));
+      &:hover {
+        background-color: rgb(var(--pastelred));
+      }
+    }
+  }
+  .project-deployed-link {
+    color: rgb(var(--pastelgreen));
+
+    > a {
+      color: rgb(var(--pastelgreen));
+
+      &:hover {
+        background-color: rgb(var(--pastelgreen));
+      }
+    }
+  }
+
+  .project-tech-wrapper {
+    text-align: right;
+  }
+
+  .project-tech-item {
+    display: block;
+  }
+}
+
+/* landscape tablets and up */
+@media only screen and (min-width: 992px) {
+  .projects-section-wrapper {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .project-list {
+    flex: 1;
+    margin-right: 18px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 18px;
+  }
+}

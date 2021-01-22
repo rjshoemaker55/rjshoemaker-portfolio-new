@@ -9,19 +9,32 @@
   flex: 1;
 }
 
-.bio-para-wrapper {
+.profile-picture {
+  width: 100%;
+  border: 3px solid rgb(var(--pastelyellow));
+  border-radius: 5px;
+  opacity: 0.85;
+}
+
+.bio-text-wrapper {
   flex: 3;
-  border: 3px solid var(--red);
+  border: 3px solid rgb(var(--pastelpurple));
   margin-left: 20px;
   border-radius: 5px;
   padding: 10px;
 }
 
+.bio-text {
+  color: rgb(255, 255, 255);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
 .bio-title {
-  margin-right: 10%;
+  width: 80%;
   font-size: 70px;
-  color: var(--red);
+  color: rgb(var(--pastelpurple));
   text-align: right;
-  margin-top: 175px;
+  margin: 175px auto 0 auto;
   line-height: 0.8;
 }

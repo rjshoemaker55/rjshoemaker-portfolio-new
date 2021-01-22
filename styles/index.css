@@ -17,10 +17,40 @@
   margin: 0px auto 15px auto;
 }
 
+.header-text {
+  color: white;
+  line-height: 1;
+  padding-bottom: 3px;
+  display: table;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.header-link-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-text {
+    border-bottom: 3px solid rgb(var(--pastelgreen));
+    font-size: 55px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .header-wrapper {
     padding: 15px 10px;
     border: none;
     margin: none;
+  }
+
+  .header-link-wrapper {
+    margin-top: 25px;
   }
 }
