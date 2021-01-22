@@ -1,20 +1,21 @@
-.projects-section-wrapper {
-  height: 600px;
+.projects-wrapper {
   margin: auto;
-  display: flex;
   width: 95%;
-  flex-direction: column;
 }
 
 .projects-section-title {
-  margin-right: 10%;
-  font-size: 70px;
-  color: rgb(185, 249, 248);
-  text-align: right;
-  margin-top: -45px;
+  font-size: 50px;
+  color: rgb(var(--pastelpurple));
+  text-align: center;
   line-height: 0.8;
   z-index: 10000;
   border-radius: 5px 5px 0 0;
+}
+
+.projects-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
 
 .project-list {
@@ -37,6 +38,7 @@
 .project-display {
   order: 2;
   flex: 3;
+  z-index: -1;
 }
 
 .project-footer-wrapper {
@@ -64,14 +66,16 @@
 }
 
 .project-repo-link {
+  color: rgb(var(--pastelred));
   > a {
     background-color: rgb(var(--pastelred));
   }
 }
 
 .project-deployed-link {
+  color: rgb(var(--pastelgreen));
   > a {
-    background-color: rgb(var(--patelgreen));
+    background-color: rgb(var(--pastelgreen));
   }
 }
 
@@ -155,9 +159,20 @@
 
 /* landscape tablets and up */
 @media only screen and (min-width: 992px) {
-  .projects-section-wrapper {
+  .projects-wrapper {
     width: 80%;
+  }
+
+  .projects-section-title {
+    text-align: right;
+    margin-top: -45px;
+    font-size: 70px;
+    color: rgb(var(--pastelblue));
+  }
+
+  .projects-content-wrapper {
     flex-direction: row;
+    margin-top: 0px;
   }
 
   .project-list {

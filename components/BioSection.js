@@ -1,11 +1,8 @@
-import styled from 'styled-components'
-import { colors } from '../utils/theme'
-
 const BioSection = () => {
   return (
-    <>
+    <div className='bio-wrapper'>
       <div className='bio-title'>bio</div>
-      <div className='bio-wrapper'>
+      <div className='bio-content-wrapper'>
         <div className='profile-picture-wrapper'>
           <img className='profile-picture' src='/images/profile-picture.jpg' />
         </div>
@@ -26,7 +23,7 @@ const BioSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

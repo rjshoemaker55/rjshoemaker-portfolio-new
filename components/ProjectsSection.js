@@ -50,9 +50,9 @@ const ProjectsSection = () => {
     window.addEventListener('resize', setWindowWidth(window.innerWidth))
   })
   return (
-    <>
+    <div className='projects-wrapper'>
       <div className='projects-section-title'>projects</div>
-      <div className='projects-section-wrapper'>
+      <div className='projects-content-wrapper'>
         <div className='project-list'>
           {projects.map((project) => (
             <ProjectListItem
@@ -119,7 +119,7 @@ const ProjectsSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
