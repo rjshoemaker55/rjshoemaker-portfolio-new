@@ -10,6 +10,7 @@ const ProjectListItem = styled.div`
   font-size: 16px;
   margin-bottom: 10px;
   border: 2px rgb(${colors.purple}) solid;
+  box-shadow: 2px 2px rgb(${colors.yellow});
   border-radius: 5px;
   text-align: center;
   transition-duration: 0.3s;

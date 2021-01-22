@@ -6,8 +6,8 @@ const ImageWrapper = styled.img`
   width: 100%;
   height: auto;
   position: relative;
-  border: rgb(${colors.blue}) 2px solid;
-  border-radius: 5px 0 5px 5px;
+  border: rgb(${colors.blue}) 3px solid;
+  border-radius: 5px;
   opacity: 0.85;
   z-index: 100;
   animation-fill-mode: forwards;

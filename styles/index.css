@@ -36,10 +36,6 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .header-text {
-    border-bottom: 3px solid rgb(var(--pastelgreen));
-    font-size: 55px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -48,6 +44,10 @@
     padding: 15px 10px;
     border: none;
     margin: none;
+  }
+  .header-text {
+    border-bottom: 3px solid rgb(var(--pastelgreen));
+    font-size: 55px;
   }
 
   .header-link-wrapper {
