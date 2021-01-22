@@ -1,12 +1,11 @@
 .projects-wrapper {
-  margin: auto;
+  margin: 35px auto 0 auto;
   width: 95%;
 }
 
 .projects-section-title {
   font-size: 50px;
   color: rgb(var(--pastelpurple));
-
   text-align: center;
   line-height: 0.8;
   z-index: 10000;
@@ -160,7 +159,7 @@
 /* landscape tablets and up */
 @media only screen and (min-width: 992px) {
   .projects-wrapper {
-    width: 80%;
+    width: 90%;
   }
 
   .projects-section-title {

@@ -1,6 +1,6 @@
 .bio-wrapper {
   width: 95%;
-  margin: 175px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .bio-title {
@@ -18,7 +18,7 @@
 
 .profile-picture-wrapper {
   flex: 1;
-  width: 70%;
+  width: 50%;
   margin: 15px auto;
 }
 
@@ -32,32 +32,57 @@
 .bio-text-wrapper {
   flex: 3;
   border: 3px solid rgb(var(--pastelblue));
-  margin: auto;
+  margin: 0 auto;
   border-radius: 5px;
   padding: 10px;
+  text-align: justify;
+  display: table;
 }
 
 .bio-text {
   color: rgb(255, 255, 255);
   line-height: 1.8;
   font-size: 18px;
+
+  + .bio-text {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  bio-wrapper {
-    width: 80%;
+  .bio-title {
+    color: rgb(var(--pastelblue));
+  }
+  .bio-content-wrapper {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  .profile-picture-wrapper {
+    margin: auto 18px auto 0;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  bio-content-wrapper {
+  .bio-wrapper {
+    width: 90%;
+  }
+
+  .bio-title {
+    text-align: left;
+  }
+
+  .bio-content-wrapper {
     flex-direction: row;
-    text-align: right;
-    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .bio-text-wrapper {
+    order: 1;
+    margin-right: 18px;
   }
 
   .profile-picture-wrapper {
     width: 100%;
-    margin: 0;
+    order: 2;
   }
 }

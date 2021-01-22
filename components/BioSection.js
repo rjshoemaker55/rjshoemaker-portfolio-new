@@ -1,3 +1,10 @@
+import styled from 'styled-components'
+import { colors } from '../utils/theme'
+
+const Highlight = styled.span`
+  color: rgb(${(props) => props.color});
+`
+
 const BioSection = () => {
   return (
     <div className='bio-wrapper'>
@@ -8,18 +15,25 @@ const BioSection = () => {
         </div>
         <div className='bio-text-wrapper'>
           <div className='bio-text'>
-            Hello, thanks for visiting my portfolio site! I am a web developer
-            from Flemington, New Jersey. I have been studying web development
-            since 2019, and have earned several certificates along the way.
-            While my main focus is in front end development, I have been
-            building my skillset to incldude backend functionality for more
-            complex applications.
+            I am a web developer from{' '}
+            <Highlight color={colors.blue}>Flemington, New Jersey</Highlight>{' '}
+            specializing in{' '}
+            <Highlight color={colors.yellow}>front end development.</Highlight>{' '}
+            After beginning my journey in web development in 2019, I've worked
+            hard to acquire several{' '}
+            <Highlight color={colors.red}>certificates</Highlight> and am
+            currently building my skill set to create more{' '}
+            <Highlight color={colors.purple}>complex applications.</Highlight>
           </div>
           <div className='bio-text'>
-            In my free time, I enjoy writing and playing music. Currently, I
-            play guitar and keyboard, as well as sing. My creative abilities
-            allow be to create beautiful, aesthetic applications that are sure
-            to please the eye of users.
+            With a background in the{' '}
+            <Highlight color={colors.yellow}>trades</Highlight>, I have
+            developed strong{' '}
+            <Highlight color={colors.green}>creative problem solving</Highlight>{' '}
+            and <Highlight color={colors.red}>communication</Highlight> skills
+            that make me a great{' '}
+            <Highlight color={colors.blue}>team member</Highlight> in a
+            development setting.
           </div>
         </div>
       </div>
