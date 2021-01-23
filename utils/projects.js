@@ -41,7 +41,7 @@ const projects = [
     description: 'A collaborative bootcamp project to caption and share gifs.',
     repo: 'https://github.com/JoeySuc89/Cap-Dat-Gif',
     deployed: 'https://rjerykevanjoe.herokuapp.com/',
-    gif: '/images/gifs/cap-dat-gif.gif',
+    gif: '/images/gifs/cap-dat-gif.png',
     tech: ['React', 'Express', 'MySQL', 'Node.js']
   }
 ]

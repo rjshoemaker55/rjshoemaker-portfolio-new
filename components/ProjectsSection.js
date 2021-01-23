@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import projects from '../utils/projects'
 import { colors } from '../utils/theme'
 import LazyImage from '../components/LazyImage'
+import Image from 'next/image'
 
 const ProjectListItem = styled.div`
   color: rgb(${colors.purple});
@@ -66,8 +67,14 @@ const ProjectsSection = () => {
           ))}
         </div>
         <div className='project-display'>
-          <LazyImage src={currentProject.gif} />
-          {/* <ProjectDisplayGif src={currentProject.gif} /> */}
+          {/* <LazyImage src={currentProject.gif} /> */}
+          <Image
+            src={currentProject.gif}
+            alt={currentProject.name}
+            width={500}
+            height={300}
+            priority='true'
+          />
           <div className='project-footer-wrapper'>
             <div className='project-footer-info'>
               <div className='project-display-title'>{currentProject.name}</div>
