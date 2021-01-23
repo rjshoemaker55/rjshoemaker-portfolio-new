@@ -8,7 +8,7 @@
   color: rgb(var(--pastelpurple));
   text-align: center;
   line-height: 0.8;
-  z-index: 1000000;
+  z-index: 99999;
 }
 
 .projects-content-wrapper {
@@ -37,7 +37,6 @@
 .project-display {
   order: 2;
   flex: 3;
-  z-index: 1;
 }
 
 .project-footer-wrapper {
