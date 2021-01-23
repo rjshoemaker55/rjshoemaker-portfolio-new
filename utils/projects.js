@@ -6,6 +6,7 @@ const projects = [
     repo: 'https://github.com/rjshoemaker55/my-concierge',
     deployed: 'https://my-concierge0.herokuapp.com/',
     src: '/videos/my-concierge.webm',
+    mov: '/videos/mov/my-concierge.mov',
     tech: ['React', 'Express', 'Node.js']
   },
   {
@@ -14,6 +15,7 @@ const projects = [
     description: 'Freelance site built for an audio business.',
     repo: 'https://github.com/rjshoemaker55/handmade-audio2',
     deployed: 'http://www.handmade-audio.com',
+    mov: 'videos/mov/handmade-audio.mov',
     src: '/videos/handmade-audio.webm',
     tech: ['React']
   },
@@ -24,6 +26,7 @@ const projects = [
     repo: 'https://github.com/rjshoemaker55/bill-keeper',
     deployed: 'https://bill-keeper-rjs.herokuapp.com/',
     src: '/videos/bill-keeper.webm',
+    mov: '/videos/mov/bill-keeper.mov',
     tech: ['React', 'GraphQL', 'PostgreSQL']
   },
   {
@@ -33,6 +36,7 @@ const projects = [
     repo: 'https://github.com/rjshoemaker55/rjs-portfolio',
     deployed: 'https://www.rjshoemaker.com',
     src: '/videos/rj-shoemaker.webm',
+    mov: '/videos/mov/rj-shoemaker.mov',
     tech: ['React', 'Bootstrap']
   },
   {
@@ -42,6 +46,7 @@ const projects = [
     repo: 'https://github.com/JoeySuc89/Cap-Dat-Gif',
     deployed: 'https://rjerykevanjoe.herokuapp.com/',
     src: '/videos/cap-dat-gif.webm',
+    mov: '/videos/mov/cap-dat-gif.mov',
     tech: ['React', 'Express', 'MySQL', 'Node.js']
   }
 ]

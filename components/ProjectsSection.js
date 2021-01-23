@@ -66,7 +66,7 @@ const ProjectsSection = () => {
         <div className='project-display'>
           <video
             className='project-video'
-            src={currentProject.src}
+            src={windowWidth > 992 ? currentProject.src : currentProject.mov}
             playsInline
             autoPlay
           />
