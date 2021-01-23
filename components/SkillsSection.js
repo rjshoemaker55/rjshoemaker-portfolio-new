@@ -1,7 +1,5 @@
 import skills from '../utils/skills'
 
-console.log(skills)
-
 const SkillsSection = () => {
   return (
     <div className='skills-wrapper'>

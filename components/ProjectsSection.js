@@ -67,7 +67,8 @@ const ProjectsSection = () => {
           <video
             className='project-video'
             src={currentProject.src}
-            autoPlay={true}
+            playsInline
+            autoPlay
           />
           <div className='project-footer-wrapper'>
             <div className='project-footer-info'>
