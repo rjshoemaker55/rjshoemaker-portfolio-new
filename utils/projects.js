@@ -6,7 +6,7 @@ const projects = [
     repo: 'https://github.com/rjshoemaker55/my-concierge',
     deployed: 'https://my-concierge0.herokuapp.com/',
     src: '/videos/my-concierge.webm',
-    mov: '/videos/mov/my-concierge.mov',
+    mp4: '/videos/mp4/my-concierge.mp4',
     tech: ['React', 'Express', 'Node.js']
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     description: 'Freelance site built for an audio business.',
     repo: 'https://github.com/rjshoemaker55/handmade-audio2',
     deployed: 'http://www.handmade-audio.com',
-    mov: 'videos/mov/handmade-audio.mov',
+    mp4: 'videos/mp4/handmade-audio.mp4',
     src: '/videos/handmade-audio.webm',
     tech: ['React']
   },
@@ -26,7 +26,7 @@ const projects = [
     repo: 'https://github.com/rjshoemaker55/bill-keeper',
     deployed: 'https://bill-keeper-rjs.herokuapp.com/',
     src: '/videos/bill-keeper.webm',
-    mov: '/videos/mov/bill-keeper.mov',
+    mp4: '/videos/mp4/bill-keeper.mp4',
     tech: ['React', 'GraphQL', 'PostgreSQL']
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     repo: 'https://github.com/rjshoemaker55/rjs-portfolio',
     deployed: 'https://www.rjshoemaker.com',
     src: '/videos/rj-shoemaker.webm',
-    mov: '/videos/mov/rj-shoemaker.mov',
+    mp4: '/videos/mp4/rj-shoemaker.mp4',
     tech: ['React', 'Bootstrap']
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     repo: 'https://github.com/JoeySuc89/Cap-Dat-Gif',
     deployed: 'https://rjerykevanjoe.herokuapp.com/',
     src: '/videos/cap-dat-gif.webm',
-    mov: '/videos/mov/cap-dat-gif.mov',
+    mp4: '/videos/mp4/cap-dat-gif.mp4',
     tech: ['React', 'Express', 'MySQL', 'Node.js']
   }
 ]
