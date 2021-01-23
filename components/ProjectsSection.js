@@ -113,9 +113,12 @@ const ProjectsSection = () => {
             </div>
             <div className='project-tech-wrapper'>
               <div className='project-tech-header'>Technologies used:</div>
-              {currentProject.tech.map((tech) => (
+              {currentProject.tech.map((tech, i) => (
                 <div className='project-tech-item' key={tech}>
                   {tech}
+                  {windowWidth < 768 &&
+                    i !== currentProject.tech.length - 1 &&
+                    ', '}
                 </div>
               ))}
             </div>
