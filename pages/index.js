@@ -1,8 +1,8 @@
-import styled from 'styled-components'
 import Background from '../components/Background'
 import Button from '../components/Button'
 import ProjectsSection from '../components/ProjectsSection'
 import BioSection from '../components/BioSection'
+import SkillsSection from '../components/SkillsSection'
 
 const Index = () => {
   return (
@@ -32,6 +32,7 @@ const Index = () => {
         </div>
         <ProjectsSection />
         <BioSection />
+        <SkillsSection />
       </div>
     </>
   )

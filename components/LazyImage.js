@@ -6,7 +6,7 @@ const ImageWrapper = styled.img`
   width: 100%;
   height: auto;
   position: relative;
-  border: rgb(${colors.blue}) 3px solid;
+  border: rgb(${colors.green}) 3px solid;
   border-radius: 5px;
   opacity: 0.85;
   z-index: 100;

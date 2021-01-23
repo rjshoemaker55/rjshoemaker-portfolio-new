@@ -1,6 +1,6 @@
 .bio-wrapper {
   width: 95%;
-  margin: 50px auto 0 auto;
+  margin: 35px auto 0 auto;
 }
 
 .bio-title {
@@ -31,7 +31,7 @@
 
 .bio-text-wrapper {
   flex: 3;
-  border: 3px solid rgb(var(--pastelblue));
+  border: 3px solid rgb(var(--pastelred));
   margin: 0 auto;
   border-radius: 5px;
   padding: 10px;
@@ -51,7 +51,7 @@
 
 @media only screen and (min-width: 768px) {
   .bio-title {
-    color: rgb(var(--pastelblue));
+    color: rgb(var(--pastelred));
   }
   .bio-content-wrapper {
     flex-direction: row;
@@ -84,5 +84,6 @@
   .profile-picture-wrapper {
     width: 100%;
     order: 2;
+    margin: 0;
   }
 }

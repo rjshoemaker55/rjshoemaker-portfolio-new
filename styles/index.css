@@ -12,9 +12,9 @@
   flex: 1;
   position: relative;
   width: 95%;
-  padding: 10px 0px;
   border-bottom: 2px white solid;
-  margin: 0px auto 15px auto;
+  padding-bottom: 15px;
+  margin: 10px auto 0 auto;
 }
 
 .header-text {
@@ -46,7 +46,7 @@
     margin: none;
   }
   .header-text {
-    border-bottom: 3px solid rgb(var(--pastelgreen));
+    border-bottom: 3px solid rgb(var(--pastelblue));
     font-size: 55px;
   }
 
