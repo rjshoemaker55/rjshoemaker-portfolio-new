@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Background from '../components/Background'
 import Button from '../components/Button'
 import ProjectsSection from '../components/ProjectsSection'
@@ -8,6 +9,9 @@ import ContactSection from '../components/ContactSection'
 const Index = () => {
   return (
     <>
+      <Head>
+        <title>RJ Shoemaker</title>
+      </Head>
       <Background />
       <div className='index-wrapper'>
         <div className='header-wrapper'>
