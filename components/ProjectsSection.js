@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import projects from '../utils/projects'
 import { colors } from '../utils/theme'
-import LazyImage from '../components/LazyImage'
-import Image from 'next/image'
-
 const ProjectListItem = styled.div`
   color: rgb(${colors.purple});
   font-weight: bold;
@@ -67,13 +64,10 @@ const ProjectsSection = () => {
           ))}
         </div>
         <div className='project-display'>
-          {/* <LazyImage src={currentProject.gif} /> */}
-          <Image
-            src={currentProject.gif}
-            alt={currentProject.name}
-            width={500}
-            height={300}
-            priority='true'
+          <video
+            className='project-video'
+            src={currentProject.src}
+            autoPlay={true}
           />
           <div className='project-footer-wrapper'>
             <div className='project-footer-info'>

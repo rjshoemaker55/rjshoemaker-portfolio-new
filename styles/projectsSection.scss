@@ -39,6 +39,12 @@
   flex: 3;
 }
 
+.project-video {
+  width: 100%;
+  border: 3px rgb(var(--pastelgreen)) solid;
+  border-radius: 5px;
+}
+
 .project-footer-wrapper {
   border: 2px solid rgb(var(--pastelyellow));
   border-radius: 5px;
