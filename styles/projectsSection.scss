@@ -6,9 +6,9 @@
 .projects-section-title {
   font-size: 50px;
   color: rgb(var(--pastelpurple));
-  text-align: center;
+  right: 5%;
   line-height: 0.8;
-  z-index: 99999;
+  text-align: center;
 }
 
 .projects-content-wrapper {
@@ -43,10 +43,12 @@
   width: 100%;
   border: 3px rgb(var(--pastelgreen)) solid;
   border-radius: 5px;
+  position: 1;
 }
 
 .project-footer-wrapper {
   border: 2px solid rgb(var(--pastelyellow));
+  background-color: rgba(var(--pastelyellow), 0.06);
   border-radius: 5px;
   margin-top: 8px;
   padding: 10px;
@@ -168,10 +170,13 @@
   }
 
   .projects-section-title {
-    text-align: right;
+    z-index: 99987077987968;
+    position: absolute;
     margin-top: -45px;
     font-size: 60px;
     color: rgb(var(--pastelgreen));
+    z-index: 99987077987968;
+    position: absolute;
   }
 
   .projects-content-wrapper {

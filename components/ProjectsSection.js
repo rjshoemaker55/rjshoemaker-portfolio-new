@@ -18,6 +18,7 @@ const ProjectListItem = styled.div`
     background-color: rgb(${colors.purple});
     color: black;
     cursor: pointer;
+    box-shadow: 1px 1px rgb(${colors.yellow});
   }
 
   &:nth-child(${(props) => props.currentProject.id + 1}) {

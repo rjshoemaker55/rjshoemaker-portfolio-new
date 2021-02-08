@@ -7,7 +7,12 @@ const SkillsSection = () => {
       <div className='skills-content-wrapper'>
         {skills.map((skill) => (
           <div key={skill.name} className='skill-item'>
-            <img className='skill-logo' src={skill.logo} />
+            <img
+              className={
+                skill.name === 'Next.js' ? 'skill-logo next-logo' : 'skill-logo'
+              }
+              src={skill.logo}
+            />
             <div className='skill-name'>{skill.name}</div>
           </div>
         ))}

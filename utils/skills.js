@@ -1,15 +1,15 @@
 const skills = [
   {
     name: 'HTML',
-    logo: '/images/logos/html.png'
+    logo: '/images/vectors/html-5.svg'
   },
   {
     name: 'CSS',
-    logo: '/images/logos/css.png'
+    logo: '/images/vectors/css.svg'
   },
   {
     name: 'Javascript',
-    logo: '/images/logos/javascript.png'
+    logo: '/images/vectors/javascript.svg'
   },
   {
     name: 'React',
@@ -33,7 +33,7 @@ const skills = [
   },
   {
     name: 'Next.js',
-    logo: '/images/logos/nextjs.png'
+    logo: '/images/vectors/nextjs-3.svg'
   }
 ]
 

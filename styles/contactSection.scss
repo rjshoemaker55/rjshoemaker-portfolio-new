@@ -13,6 +13,7 @@
 
 .contact-content-wrapper {
   border: 3px solid rgb(var(--pastelred));
+  background-color: rgba(var(--pastelred), 0.1);
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -38,6 +39,7 @@
   }
   .contact-content-wrapper {
     border: 3px solid rgb(var(--pastelpurple));
+    background-color: rgba(var(--pastelpurple), 0.1);
   }
   .contact-item {
     font-size: 32px;
