@@ -11,6 +11,7 @@ const Index = () => {
     <>
       <Head>
         <title>RJ Shoemaker</title>
+        <desc>RJ Shoemaker's Portfolio Site</desc>
       </Head>
       <Background />
       <div className='index-wrapper'>
