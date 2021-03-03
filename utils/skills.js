@@ -25,7 +25,7 @@ const skills = [
   },
   {
     name: 'PostgreSQL',
-    logo: '/images/logos/postgreslogo.png'
+    logo: '/images/logos/postgres-logo.png'
   },
   {
     name: 'Node.js',
