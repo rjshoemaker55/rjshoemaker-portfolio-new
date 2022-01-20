@@ -22,11 +22,12 @@ a {
 * {
   box-sizing: border-box;
   font-family: 'Yusei Magic';
+  cursor: url('/images/white-x.png'), auto;
 }
 
 @font-face {
   font-family: 'Yusei Magic';
-  src: url('/fonts/YuseiMagic/YuseiMagic-Regular.ttf');
+  src: url('/fonts/YuseiMagic/YuseiMagic-Regular.ttf'), auto;
   font-style: normal;
   font-display: swap;
   font-weight: 400;

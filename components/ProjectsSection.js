@@ -87,7 +87,7 @@ const ProjectsSection = () => {
                       target='_blank'
                       rel='noreferrer'
                     >
-                      {currentProject.deployed}
+                      {currentProject.repo}
                     </a>
                   </div>
                   <div className='project-display-link project-deployed-link'>
