@@ -12,7 +12,7 @@ const CustomButton = styled.a`
 
   &:hover {
     background-color: transparent;
-    cursor: pointer;
+    cursor: cell;
 
     > img {
       filter: invert(100%);

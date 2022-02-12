@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { colors } from '../utils/theme'
+import certificates from '../utils/certificates'
+import skills from '../utils/skills'
 
 const Highlight = styled.span`
   color: rgb(${(props) => props.color});
@@ -34,6 +36,19 @@ const BioSection = () => {
             that make me a great{' '}
             <Highlight color={colors.blue}>team member</Highlight> in a
             development setting.
+          </div>
+          <div className='courses-section-wrapper'>
+            <div className='courses-header'>courses and certificates</div>
+            <div className='courses-list-wrapper'>
+              {certificates.map((certificate) => {
+                return (
+                  <div className='course-item-wrapper'>
+                    <img className='course-item-img' src={certificate.image} />
+                    <div className='course-item-name'>{certificate.name}</div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>

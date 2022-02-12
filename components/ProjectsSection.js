@@ -17,7 +17,7 @@ const ProjectListItem = styled.div`
   &:hover {
     background-color: rgb(${colors.purple});
     color: black;
-    cursor: pointer;
+    cursor: cell;
     box-shadow: 1px 1px rgb(${colors.yellow});
   }
 
